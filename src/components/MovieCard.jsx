@@ -24,7 +24,7 @@ function MovieCard({ movie }) {
     setIsFavorite(favorites.includes(movie.id));
 
     // Fetch genre data for the movie
-    const apiKey = '7a529b24ef789e4a50de476f2a2bbd35'; // Replace with your API key
+    const apiKey = '523c8b46aafc35c66f9fd4323369516c'; // Replace with your API key
     axios
       .get(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${apiKey}`)
       .then((response) => {
