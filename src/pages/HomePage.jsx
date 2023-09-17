@@ -28,7 +28,7 @@ function HomePage() {
   useEffect(() => {
     const fetchPoster = async () => {
       try {
-        const apiKey = '7a529b24ef789e4a50de476f2a2bbd35';
+        const apiKey = '523c8b46aafc35c66f9fd4323369516c';
         const response = await axios.get(
           `https://api.themoviedb.org/3/search/movie?query=John+Wick&api_key=${apiKey}`
         );
@@ -46,7 +46,7 @@ function HomePage() {
   useEffect(() => {
     const fetchTopMovies = async () => {
       try {
-        const apiKey = '7a529b24ef789e4a50de476f2a2bbd35';
+        const apiKey = '523c8b46aafc35c66f9fd4323369516c';
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&page=1`
         );
@@ -66,7 +66,7 @@ function HomePage() {
   const handleSearch = async () => {
     setLoading(true);
     try {
-      const apiKey = '7a529b24ef789e4a50de476f2a2bbd35';
+      const apiKey = '523c8b46aafc35c66f9fd4323369516c';
       const response = await axios.get(
         `https://api.themoviedb.org/3/search/movie?query=${searchQuery}&api_key=${apiKey}`
       );
