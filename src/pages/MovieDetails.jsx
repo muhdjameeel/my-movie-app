@@ -35,7 +35,7 @@ function MovieDetails() {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const apiKey = '7a529b24ef789e4a50de476f2a2bbd35';
+        const apiKey = '523c8b46aafc35c66f9fd4323369516c';
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`,
         );
